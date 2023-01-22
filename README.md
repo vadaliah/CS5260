@@ -93,4 +93,5 @@ Data columns (total 10 columns):
 
 - Confusion Matrix  to be updated
 # References
-[VWAP Profiles: A Machine Learning application(https://www.bacidore.com/post/volume-profile-estimation-a-machine-learning-application)]
+[VWAP Profiles: A Machine Learning application (https://www.bacidore.com/post/volume-profile-estimation-a-machine-learning-application)]
+[Taking-the-confusion-out-of-confusion-matrices (https://towardsdatascience.com/taking-the-confusion-out-of-confusion-matrices-c1ce054b3d3e)]
