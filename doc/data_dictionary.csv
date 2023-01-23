@@ -1,1 +1,13 @@
-
+﻿Feature,Description,Type,Sample Value
+TICKER,Currecny Pair Identifier,String,EURUSD
+DTYYYYMMDD,Business Date,String(YYYYMMDD),20180401
+TIME,Hour,Time,1:00
+OPEN,Opening Price for the interval,Float,0.76855
+HIGH,High Price for the interval,Float,0.76928
+LOW,Low Price for the interval,Float,0.76844
+CLOSE,Closing Price for the interval,Float,0.76888
+VOL,Volume Traded  for the interval,Float,356150000
+AVG_PRICE,Avg_price=(Open+Close+High+Low)/4,Float,0.7687875
+PV,Price_Volume=Avg_Price*Volume,Float,273803668.1
+VWAP,Volume Weighted Avg Price = PV/Cumulative_Volume,Float,
+Trend,VWAP Direction,String,"Up_Trend, Down_Trend"
