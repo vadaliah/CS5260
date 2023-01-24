@@ -3,10 +3,10 @@
 ### This repository contains the source code for:
 - Machine Learning solution to predict VWAP Volume pattern for given currency pair based on historic currenypair volume data
 ## Problem Formulation
-#### In this example, we will implement prediction of Pricing trend (Upward, Downward) using VWAP Pricing Algorithm. The primary input to the VWAP algorithm is the volume profile. Volume profiles give an algorithm information on historical volume patterns. Algorithms generally use this information by trading more when volumes are typically high (e.g., near the close) and less when they are typically light (e.g., mid-day)
+#### In this example, we will implement the VWAP Pricing Algorithm to predict the trend in price (Upward, Downward). The primary input to the VWAP algorithm is the volume profile which  provides information on historical volume patterns. Algorithms generally use this information by trading more when volumes are typically high (e.g., near the close) or trade less when the volumes are typically light (e.g., mid-day).
 ## Data Set
-#### In this example, we will use Historical Currency price dataset provided from FOREX Tester APP, available here: https:https://forextester.com/data/datasources.
-#### The dataset contains Hourly pricing data on EURUSD Currency Pair daily for 201804. Initial development and proof of concept is done using EURUSD curreny data but plan to extend across all major G10 Currency pairs.
+#### In this example, we use the Historical Currency price dataset retrieved from from FOREX Tester APP on January XX, 2023.
+#### The dataset contains Hourly pricing data on EURUSD Currency Pair daily for April, 2018. Initial development and proof of concept is done using EURUSD curreny data, but we plan to extend across all major G10 Currency pairs.
 ## Repository Folder Structure
 - src Folder: The source code folder
 - test Folder: Unit tests, integration tests… go here.
