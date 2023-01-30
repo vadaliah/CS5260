@@ -6,17 +6,17 @@
 ##### Currency Volume Dataset: CurrencyPair price volume data
 - Ticker(CurrencyPair)
 - BusinessDate
-- Hour
+- TimeBucket
 - Open
 - High 
 - Low
 - Close
-- Vol
+- Volume
 
 
 ######Ticker field contains CurrencyPair for the price volume data.Dataset contains  FX Price Volume data for G10 currency against USD  captured at hourly interval for all business dates in April-2018
 ###### BusinessDate field contains Date of the price data in YYYYMMDD format
-###### Hour represents time of the interval in (HH:MM) format
+###### TimeBucket represents time bucket of the interval in (HH:MM) format
 ###### Open contains opening data at the begining of the interval
 ###### High contains Highest price data for the interval
 ###### Low contains Lowest price data for the interval
@@ -29,12 +29,34 @@
 ##### Currency Trade Dataset: CurrencyPair Trade data
 - Ticker(CurrencyPair)
 - BusinessDate
-- Hour
-- Price
+- TimeBucket
+- TradeTime 
+- TradePrice 
+
+######Ticker field contains CurrencyPair for the price volume data.Dataset contains  FX Price Volume data for G10 currency against USD  captured at Minute interval for selected business dates in April-2018
+###### BusinessDate field contains Date of the price data in YYYYMMDD format
+###### TimeBucket represents Hourly time bucket of the interval in (HH:MM) format
+###### TradeTime represents trade execution time
+###### TradePrice represents Execution Price of the trade
+
+#####VWAP ML Model Defination:
+
+- Ticker(CurrencyPair)
+- BusinessDate
+- TimeBucket
+- Open
 - High 
 - Low
 - Close
-- Vol
+- Volume
+- Avg_Price
+- PV(PriceVolume)
+- Consolidated_PV ( Sum of PV by Ticker, BusinessDate)
+- VWAP (VolumeWeightedAvgPrice) = Consolidated_PV/Volume
+- TradeTime
+- TradePrice
 - Trend
 
-##### The "Trend" field refers to,  the direction of the currency price, whether it is trending up (higher then the VWAP) or down (Lower then  VWAP). trend direction, along with other indicators such as moving 200 days avg are used in algorithmic trading strategy.
+
+##### The Goal of the VWAP ML is the "Trend" field refering to the direction of the market direction whether it is a Bull(Rising) market or Bear(Falling) market, whether it is trending up (higher then the VWAP) or down (Lower then  VWAP).
+Trend direction can help train the model to determine indicator to be used in algorithmic trading strategy.
