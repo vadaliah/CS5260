@@ -1,9 +1,9 @@
-#### Data Set Information:
+#### CurrencyPair_Volume Data Set Information:
 
-##### This database contains 8 attributes related to Hourly price statistics for Major G10 FX Currencies against USD. Histroical Price and Volume data captured for all business dates for April-2018 at hourly interval.
+##### TCurrencyPair_Volume dataset contains 8 attributes related to Hourly price statistics for Major G10 FX Currencies against USD. Histroical Price and Volume data captured for all business dates for April-2018 at hourly interval.
 
 #### Attribute Information
-##### Currency Volume Dataset: CurrencyPair price volume data
+##### CurrencyPair Volume Dataset: CurrencyPair price volume data
 - Ticker(CurrencyPair)
 - BusinessDate
 - TimeBucket
@@ -26,7 +26,7 @@
 ###### PV is a computed colume , contains avg_price*volume data
 ###### VWAP is a volume weighted avg price for the Business Date, computed as sum(PV)/sum(volume) by ticker, business date
 
-##### Currency Trade Dataset: CurrencyPair Trade data
+##### Currency Trade Dataset contains 4 attributes: CurrencyPair Trade data
 - Ticker(CurrencyPair)
 - BusinessDate
 - TimeBucket
@@ -39,7 +39,9 @@
 ###### TradeTime represents trade execution time
 ###### TradePrice represents Execution Price of the trade
 
-#####VWAP ML Model Defination:
+#####VWAP ML Model Defination: VWAP ML Model contains 15 attributes
+##### The Goal  is the "Trend" field refering to the direction of the market direction whether it is a Bull(Rising) market or Bear(Falling) market, whether it is trending up (higher then the VWAP) or down (Lower then  VWAP).
+Trend direction can help train the model to determine indicator to be used in algorithmic trading strategy
 
 - Ticker(CurrencyPair)
 - BusinessDate
@@ -58,5 +60,3 @@
 - Trend
 
 
-##### The Goal of the VWAP ML is the "Trend" field refering to the direction of the market direction whether it is a Bull(Rising) market or Bear(Falling) market, whether it is trending up (higher then the VWAP) or down (Lower then  VWAP).
-Trend direction can help train the model to determine indicator to be used in algorithmic trading strategy.
