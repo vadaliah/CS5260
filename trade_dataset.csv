@@ -1,4 +1,4 @@
-﻿TICKER,BusinessDate,Time_Bucket,TradeTime,TradePrice
+﻿Ticker,BusinessDate,Time_Bucket,TradeTime,TradePrice
 USDJPY,20180401,21:00,2101,106.167
 USDJPY,20180401,21:00,2102,106.189
 USDJPY,20180401,21:00,2105,106.221
